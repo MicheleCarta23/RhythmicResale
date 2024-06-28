@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Rhythmic Resale</string>
+    <string name="logo">Logo</string>
+    <string name="option">Option</string>
+    <string name="home">Home</string>
+    <string name="user_name">Ste_Meraviglia50</string>
+    <string name="bio">La musica è la mia vita, suono l\'armonica, la pianola e un po\' la batteria</string>
+    <string name="your_ads">I tuoi annunci:</string>
+    <string name="ad_pd12">Jammin Pro PD 12</string>
+    <string name="price_pd12">80€</string>
+    <string name="num17">17</string>
+    <string name="ad_chitarrina">Chitarrina 4 corde</string>
+    <string name="price_chitarrina">160€</string>
+    <string name="num42">42</string>
+    <string name="ad_darbuka">Darbuka originale turca</string>
+    <string name="price_darbuka">40€</string>
+    <string name="num9">9</string>
+    <string name="add_ad">Aggiungi un annuncio</string>
+    <string name="sell">Vendi</string>
+    <string name="ad_title">Nome dell\'annuncio:</string>
+    <string name="write">Scrivi...</string>
+    <string name="select_category">Seleziona la categoria:</string>
+    <string name="description">Descrizione:</string>
+    <string name="brand">Marca:</string>
+    <string name="price">Prezzo:</string>
+    <string name="done">Fatto</string>
+    <string name="select_conditions">Condizioni:</string>
+    <string name="login">Accedi</string>
+    <string name="register">Registrati</string>
+    <string name="mail_username">E-mail o Username</string>
+    <string name="or">oppure</string>
+    <string name="password">Password</string>
+    <string name="password2">Inserisci nuovamente la password</string>
+    <string name="mail_register">Mail</string>
+    <string name="username_register">Nome utente</string>
+    <string name="profile">Area personale</string>
+
+
+
+
+
+
+
+
+    <string-array name="categories">
+        <item>A corda</item>
+        <item>Elettronici</item>
+        <item>Fiati</item>
+        <item>Percussioni</item>
+        <item>Tastiere</item>
+        <item>Accessori</item>
+        <item>Altro</item>
+    </string-array>
+
+    <string-array name="conditions">
+        <item>Nuovo</item>
+        <item>Pari al nuovo</item>
+        <item>Ottime</item>
+        <item>Qualche segno di usura</item>
+        <item>Rovinato ma funzionante</item>
+        <item>Non funzionante</item>
+    </string-array>
+
+
+</resources>
