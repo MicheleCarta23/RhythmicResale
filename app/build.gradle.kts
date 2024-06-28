@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.rhythmicresale"
+    namespace = "it.unica.rhythmicresale"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.rhythmicresale"
+        applicationId = "it.unica.rhythmicresale"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

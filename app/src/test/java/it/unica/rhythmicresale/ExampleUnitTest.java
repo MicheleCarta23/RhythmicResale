@@ -1,4 +1,4 @@
-package com.example.rhythmicresale;
+package it.unica.rhythmicresale;
 
 import org.junit.Test;
 

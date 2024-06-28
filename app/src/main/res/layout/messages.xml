@@ -7,90 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/dark_grey">
-
-    <RelativeLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/lightgrey"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/messages"
-            android:textColor="@color/orange"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="18dp"
-            />
-
-
-
-
-        <ImageButton
-            android:id="@+id/logo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:gravity="center_horizontal"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/logo"
-            android:scaleType="fitCenter"
-            android:src="@drawable/cromalogo"
-            android:layout_centerInParent="true"
-            />
-
-
-
-        <ImageButton
-            android:id="@+id/option"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/option"
-            android:scaleType="fitCenter"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/option"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="18dp"
-            />
-
-
-    </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
+    android:background="@color/white">
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/header"
-        android:layout_above="@id/footer"
         android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginTop="25dp">
 
             <RelativeLayout
                 android:id="@+id/message1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
                 >
 
@@ -130,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
                 android:layout_below="@+id/message1"
                 >
@@ -172,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
                 android:layout_below="@+id/message2"
                 >
@@ -209,106 +145,6 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/footer"
-        android:background="@drawable/rounded_top_corners"
-        >
-
-        <ImageButton
-            android:id="@+id/home_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/home_icon"
-            android:scaleType="fitCenter"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/option"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            app:tint="@color/darkdarkgrey"
-            />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="50dp"
-            android:background="@color/darkgrey"
-            android:layout_gravity="center_vertical"
-            />
-
-        <ImageButton
-            android:id="@+id/message_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/message_icon"
-            android:scaleType="fitCenter"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/option"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            app:tint="@color/orange"
-            android:padding="11dp"
-            />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="50dp"
-            android:background="@color/darkgrey"
-            android:layout_gravity="center_vertical"
-            />
-
-        <ImageButton
-            android:id="@+id/sell_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/plus_icon"
-            android:scaleType="fitCenter"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/option"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            app:tint="@color/darkdarkgrey"
-            android:padding="4dp"
-            />
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="50dp"
-            android:background="@color/darkgrey"
-            android:layout_gravity="center_vertical"
-            />
-
-        <ImageButton
-            android:id="@+id/cart_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/cart_icon"
-            android:scaleType="fitCenter"
-            android:backgroundTint="@color/lightgrey"
-            android:contentDescription="@string/option"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            app:tint="@color/darkdarkgrey"
-            />
-
-
-    </LinearLayout>
-
 
 
 </RelativeLayout>
