@@ -34,6 +34,12 @@
     <string name="mail_register">Mail</string>
     <string name="username_register">Nome utente</string>
     <string name="profile">Area personale</string>
+    <string name="user1">Michele Figlio di Jack</string>
+    <string name="user2">Domenico Sabatini</string>
+    <string name="user3">Alice Chiavi</string>
+    <string name="message_user1">Messaggio Automatico: l\'utente è in vacanza e non può rispondere.</string>
+    <string name="message_user2">Mi dispiace ma non posso scendere ulteriormente di prezzo.</string>
+    <string name="message_user3">Grazie a te per l\'acquisto!</string>
 
 
 
