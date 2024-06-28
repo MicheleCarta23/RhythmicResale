@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/cream">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightgrey"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insertions"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            />
+
+
+
+
+        <ImageButton
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cromalogo"
+            android:layout_centerInParent="true"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/option"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user_icon"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/option"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="96dp"
+        >
+
+
+
+        <android.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:queryHint="Cerca..."
+            android:iconifiedByDefault="false"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginStart="15dp"
+            android:theme="@style/SearchViewTheme"
+            />
+
+
+        <ImageButton
+            android:id="@+id/filter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/filter"
+            android:scaleType="fitCenter"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="@string/option"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_light_background"
+        android:layout_margin="30dp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/search_bar">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/ad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:background="@drawable/rounded_stroke"
+            >
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/pd12"
+                app:shapeAppearanceOverlay="@style/rounded_image"
+                android:id="@+id/ad1_image"
+                />
+
+            <TextView
+                android:id="@+id/ad1_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ad_pd12"
+                android:textColor="@color/darkdarkgrey"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:layout_below="@+id/ad1_image"
+                android:fontFamily="sans-serif-medium"
+                />
+
+
+            <ImageView
+                android:id="@+id/eye1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye_icon"
+                android:layout_gravity="start"
+                android:layout_below="@+id/ad1_name"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num17"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@+id/ad1_name"
+                android:layout_toEndOf="@id/eye1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_pd12"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="6dp"
+                android:layout_below="@+id/ad1_name"
+                android:layout_alignEnd="@id/ad1_name"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/ad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:background="@drawable/rounded_stroke"
+            >
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/chitarrina"
+                app:shapeAppearanceOverlay="@style/rounded_image"
+                android:id="@+id/ad2_image"
+                />
+
+            <TextView
+                android:id="@+id/ad2_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ad_chitarrina"
+                android:textColor="@color/darkdarkgrey"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:layout_below="@+id/ad2_image"
+                android:fontFamily="sans-serif-medium"
+                />
+
+
+            <ImageView
+                android:id="@+id/eye2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye_icon"
+                android:layout_gravity="start"
+                android:layout_below="@+id/ad2_name"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num42"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@+id/ad2_name"
+                android:layout_toEndOf="@id/eye2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_chitarrina"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="6dp"
+                android:layout_below="@+id/ad2_name"
+                android:layout_alignEnd="@id/ad2_name"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_top_corners"
+        >
+
+
+
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/home_icon"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/option"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/orange"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/darkgrey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageButton
+            android:id="@+id/message_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/message_icon"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/option"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/darkdarkgrey"
+            android:padding="11dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/darkgrey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageButton
+            android:id="@+id/sell_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/plus_icon"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/option"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/darkdarkgrey"
+            android:padding="4dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/darkgrey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageButton
+            android:id="@+id/cart_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/cart_icon"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/lightgrey"
+            android:contentDescription="@string/option"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/darkdarkgrey"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
