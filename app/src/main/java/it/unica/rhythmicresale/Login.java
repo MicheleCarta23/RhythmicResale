@@ -1,4 +1,4 @@
-package com.example.rhythmicresale;
+package it.unica.rhythmicresale;
 
 import android.app.Activity;
 import android.content.Context;
