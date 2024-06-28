@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/profile"
+            android:text="@string/messages"
             android:textColor="@color/orange"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -261,7 +261,7 @@
             android:contentDescription="@string/option"
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            app:tint="@color/darkdarkgrey"
+            app:tint="@color/orange"
             android:padding="11dp"
             />
 
