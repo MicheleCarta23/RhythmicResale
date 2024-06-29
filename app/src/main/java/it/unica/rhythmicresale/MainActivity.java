@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String PREFS_NAME = "user_prefs";
     public static final String IS_LOGGED_IN = "logged_in";
-    private ImageButton homeButton, messageButton, sellButton, cartButton, profileButton;
+    private ImageButton homeButton, messageButton, sellButton, favoritesButton, profileButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         homeButton = findViewById(R.id.home_button);
         messageButton = findViewById(R.id.message_button);
         sellButton = findViewById(R.id.sell_button);
-        cartButton = findViewById(R.id.cart_button);
+        favoritesButton = findViewById(R.id.favorite_button);
         profileButton = findViewById(R.id.profile);
 
         if (homeButton != null) {
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         if (sellButton != null) {
             sellButton.setOnClickListener(v -> checkLoginAndNavigate(new AddAdFragment(), "Aggiungi Annuncio"));
         }
-        if (cartButton != null) {
-            cartButton.setOnClickListener(v -> checkLoginAndNavigate(new FavoritesFragment(), "Preferiti"));
+        if (favoritesButton != null) {
+            favoritesButton.setOnClickListener(v -> checkLoginAndNavigate(new FavoritesFragment(), "Preferiti"));
         }
         if (profileButton != null) {
             profileButton.setOnClickListener(v -> checkLoginAndNavigate(new ProfileFragment(), "Profilo"));
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         if (homeButton != null) homeButton.setColorFilter(currentFragmentTitle.equals("Insertions") ? selectedColor : defaultColor);
         if (messageButton != null) messageButton.setColorFilter(currentFragmentTitle.equals("Messaggi") ? selectedColor : defaultColor);
         if (sellButton != null) sellButton.setColorFilter(currentFragmentTitle.equals("Aggiungi Annuncio") ? selectedColor : defaultColor);
-        if (cartButton != null) cartButton.setColorFilter(currentFragmentTitle.equals("Preferiti") ? selectedColor : defaultColor);
+        if (favoritesButton != null) favoritesButton.setColorFilter(currentFragmentTitle.equals("Preferiti") ? selectedColor : defaultColor);
         if (profileButton != null) profileButton.setColorFilter(currentFragmentTitle.equals("Profilo") ? selectedColor : defaultColor);
     }
 
