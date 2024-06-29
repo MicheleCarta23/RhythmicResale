@@ -66,6 +66,8 @@
     <string name="message_user3">Grazie a te per l\'acquisto!</string>
     <string name="messages">Messaggi</string>
     <string name="insertions">Annunci</string>
+    <string name="register_message">"Registrazione completata con successo!"</string>
+    <string name="logout">"Logout"</string>
 
 
 
