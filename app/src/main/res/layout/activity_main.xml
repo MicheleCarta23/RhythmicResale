@@ -84,7 +84,7 @@
             android:id="@+id/cart_button"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@drawable/cart_icon"
+            android:src="@drawable/heart_icon"
             android:scaleType="fitCenter"
             android:backgroundTint="@color/lightgrey"
             android:layout_weight="1"
