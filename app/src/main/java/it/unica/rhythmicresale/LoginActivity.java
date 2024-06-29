@@ -3,7 +3,6 @@ package it.unica.rhythmicresale;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,8 +20,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        validCredentials.put("faraone", "66145");
-        validCredentials.put("carta", "66081");
+        validCredentials.put("Ste_Meraviglia50", "66145");
+        validCredentials.put("Ali_Chiavi81", "66081");
 
         EditText usernameEditText = findViewById(R.id.mail_username);
         EditText passwordEditText = findViewById(R.id.password);
@@ -36,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             if (validCredentials.containsKey(username) && Objects.equals(validCredentials.get(username), password)) {
                 SharedPreferences.Editor editor = getSharedPreferences(MainActivity.PREFS_NAME, MODE_PRIVATE).edit();
                 editor.putBoolean(MainActivity.IS_LOGGED_IN, true);
+                editor.putString("username", username); // Save the username
                 editor.apply();
 
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);

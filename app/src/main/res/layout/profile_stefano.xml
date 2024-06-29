@@ -74,7 +74,7 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
-                android:src="@drawable/propic"
+                android:src="@drawable/propic_stefano"
                 android:layout_marginBottom="20dp"
                 />
 
@@ -93,7 +93,7 @@
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/user_name"
+                    android:text="@string/user_stefano"
                     android:textSize="22sp"
                     android:textAlignment="center"
                     android:paddingTop="12dp"
@@ -106,7 +106,7 @@
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/bio"
+                    android:text="@string/bio_stefano"
                     android:textSize="16sp"
                     android:textAlignment="center"
                     android:paddingTop="4dp"
