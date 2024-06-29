@@ -68,6 +68,6 @@ public class MainActivity extends AppCompatActivity {
         homeButton.setImageResource(activeButtonId == R.id.home_button ? R.drawable.home_icon_active : R.drawable.home_icon);
         messageButton.setImageResource(activeButtonId == R.id.message_button ? R.drawable.message_icon_active : R.drawable.message_icon);
         sellButton.setImageResource(activeButtonId == R.id.sell_button ? R.drawable.plus_icon_active : R.drawable.plus_icon);
-        cartButton.setImageResource(activeButtonId == R.id.cart_button ? R.drawable.cart_icon_active : R.drawable.cart_icon);
+        cartButton.setImageResource(activeButtonId == R.id.cart_button ? R.drawable.heart_icon_active : R.drawable.heart_icon);
     }
 }
