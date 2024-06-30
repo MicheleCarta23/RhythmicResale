@@ -17,14 +17,14 @@
     <string name="ad_darbuka">Darbuka originale turca</string>
     <string name="price_darbuka">30€</string>
     <string name="ad_basso">Basso elettrico Squier</string>
-    <string name="price_basso">240€</string>
+    <string name="price_basso">380€</string>
     <string name="ad_bacchette">Bacchette 5B Vic Firth</string>
     <string name="price_bacchette">10€</string>
     <string name="ad_tele">TELECASTER American Pro…</string>
     <string name="price_tele">1400€</string>
     <string name="ad_classica">Chitarra di mia figlia di scuola</string>
     <string name="price_classica">100€</string>
-    <string name="ad_bassotuba">Bassotuba perfette con…</string>
+    <string name="ad_bassotuba">Bassotuba perfette con …</string>
     <string name="price_bassotuba">600€</string>
     <string name="ad_sax">Sax soprano placcato blu </string>
     <string name="price_sax">135€</string>
@@ -80,6 +80,9 @@
     <string name="conversation_id_placeholder">Conversazione ID: %1$s</string>
     <string name="input_message">Scrivi un messaggio</string>
     <string name="send">Invia</string>
+    <string name="bass_description">Basso Fender Squier serie Precision BASS, prodotto nel 2018 replica dell'iconico basso del '70. Design classico e sound avvolgente tipico di questi bassi. Usato solo per verificare che funzioni, dotato ancora di tutte le pellicole protettive. Vendo per inutilizzo. No perditempo, effettuo spedizioni solo in Italia.</string>
+    <string name="buy">Acquista</string>
+
 
 
 

@@ -4,4 +4,9 @@
         <item name="android:textColor">@color/black</item> <!-- Colore del testo -->
         <item name="android:textColorHint">@color/lightgrey</item> <!-- Colore del suggerimento -->
     </style>
+
+    <style name="MyButtonStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
 </resources>
