@@ -1,5 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/menu_privacy"
+        android:title="@string/privacy"/>
+    <item
+        android:id="@+id/menu_dati_personali"
+        android:title="@string/PD"/>
+    <item
+        android:id="@+id/menu_notifiche"
+        android:title="@string/notifications"/>
+    <item
+        android:id="@+id/menu_cambia_password"
+        android:title="@string/change_password"/>
+    <item
         android:id="@+id/menu_logout"
-        android:title="@string/logout" />
+        android:title="@string/logout"/>
 </menu>

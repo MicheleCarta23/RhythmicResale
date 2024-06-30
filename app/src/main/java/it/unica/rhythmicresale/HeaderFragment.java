@@ -3,42 +3,42 @@ package it.unica.rhythmicresale;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.PopupMenu;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+
+import java.util.Objects;
 
 public class HeaderFragment extends Fragment {
 
     private TextView titleTextView;
-    private ImageButton profileButton;
-    private ImageButton optionButton;
+    private ImageButton profileButton, optionButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_header, container, false);
         titleTextView = view.findViewById(R.id.header_title);
-        profileButton = view.findViewById(R.id.profile);
-        optionButton = view.findViewById(R.id.option);
-        ImageButton logoButton = view.findViewById(R.id.logo);
+        profileButton = view.findViewById(R.id.profile_button);
+        optionButton = view.findViewById(R.id.option_button);
 
         optionButton.setOnClickListener(this::showPopupMenu);
 
         profileButton.setOnClickListener(v -> {
             if (getActivity() instanceof MainActivity) {
-                ((MainActivity) getActivity()).checkLoginAndNavigate(new ProfileFragment(), "Profile");
-            }
-        });
-
-        logoButton.setOnClickListener(v -> {
-            if (getActivity() instanceof MainActivity) {
-                ((MainActivity) getActivity()).navigateToFragment(new InsertionsFragment(), "Insertions", false);
+                ((MainActivity) getActivity()).navigateToProfileStefano();
             }
         });
 
@@ -50,12 +50,35 @@ public class HeaderFragment extends Fragment {
         popupMenu.getMenuInflater().inflate(R.menu.profile_option_menu, popupMenu.getMenu());
         popupMenu.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.menu_logout) {
-                logout();
+                showLogoutConfirmationDialog();
+                return true;
+            } else {
+                showOptionSelectedToast(Objects.requireNonNull(item.getTitle()).toString());
                 return true;
             }
-            return false;
         });
         popupMenu.show();
+
+        // Modifica il colore del testo dell'elemento di menu "Logout"
+        MenuItem logoutItem = popupMenu.getMenu().findItem(R.id.menu_logout);
+        if (logoutItem != null) {
+            SpannableString s = new SpannableString(logoutItem.getTitle());
+            s.setSpan(new ForegroundColorSpan(Color.RED), 0, s.length(), 0);
+            logoutItem.setTitle(s);
+        }
+    }
+
+    private void showOptionSelectedToast(String option) {
+        Toast.makeText(requireContext(), option + " selezionato", Toast.LENGTH_SHORT).show();
+    }
+
+    private void showLogoutConfirmationDialog() {
+        new AlertDialog.Builder(requireContext())
+                .setTitle("Conferma Logout")
+                .setMessage("Sei sicuro di voler effettuare il logout?")
+                .setPositiveButton("Sì", (dialog, which) -> logout())
+                .setNegativeButton("No", null)
+                .show();
     }
 
     private void logout() {

@@ -4,4 +4,12 @@
         <item name="android:textColor">@color/black</item> <!-- Colore del testo -->
         <item name="android:textColorHint">@color/lightgrey</item> <!-- Colore del suggerimento -->
     </style>
+
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/light_grey</item>
+        <item name="android:background">@drawable/less_rounded_corners</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>
