@@ -76,6 +76,8 @@
     <string name="insertions">Annunci</string>
     <string name="register_message">"Registrazione completata con successo!"</string>
     <string name="logout">"Logout"</string>
+    <string name="conversation_id_text">Conversazione ID: %1$s</string>
+    <string name="conversation_id_placeholder">Conversazione ID: %1$s</string>
 
 
 
