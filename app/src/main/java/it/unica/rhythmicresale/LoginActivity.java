@@ -20,8 +20,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        validCredentials.put("Ste_Meraviglia50", "66145");
-        validCredentials.put("Ali_Chiavi81", "66081");
+        validCredentials.put("ste_meraviglia50".toLowerCase(), "66145");
+        validCredentials.put("ali_chiavi81".toLowerCase(), "66081");
 
         EditText usernameEditText = findViewById(R.id.mail_username);
         EditText passwordEditText = findViewById(R.id.password);
@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         Button registerButton = findViewById(R.id.register_button);
 
         loginButton.setOnClickListener(v -> {
-            String username = usernameEditText.getText().toString();
+            String username = usernameEditText.getText().toString().toLowerCase();
             String password = passwordEditText.getText().toString();
 
             if (validCredentials.containsKey(username) && Objects.equals(validCredentials.get(username), password)) {

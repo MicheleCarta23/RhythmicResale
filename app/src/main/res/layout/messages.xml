@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/cream">
 
 
     <ScrollView
@@ -21,6 +21,7 @@
             android:padding="16dp"
             android:layout_marginTop="25dp">
 
+            <!-- Messaggio 1-->
             <RelativeLayout
                 android:id="@+id/message1"
                 android:layout_width="match_parent"
@@ -28,6 +29,7 @@
                 android:padding="8dp"
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
+                android:tag="1"
                 >
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -61,6 +63,7 @@
 
             </RelativeLayout>
 
+            <!-- Messaggio 2-->
             <RelativeLayout
                 android:id="@+id/message2"
                 android:layout_width="match_parent"
@@ -68,6 +71,7 @@
                 android:padding="8dp"
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
+                android:tag="2"
                 android:layout_below="@+id/message1"
                 >
 
@@ -102,7 +106,7 @@
 
             </RelativeLayout>
 
-            <!-- Sample message 3 -->
+            <!-- Messaggio 3-->
             <RelativeLayout
                 android:id="@+id/message3"
                 android:layout_width="match_parent"
@@ -110,6 +114,7 @@
                 android:padding="8dp"
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/rounded_corners"
+                android:tag="3"
                 android:layout_below="@+id/message2"
                 >
 

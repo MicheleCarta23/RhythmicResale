@@ -21,9 +21,9 @@ public class ProfileFragment extends Fragment {
         String username = preferences.getString("username", "");
 
         View view = null;
-        if ("Ste_Meraviglia50".equals(username)) {
+        if ("ste_meraviglia50".equals(username)) {
             view = inflater.inflate(R.layout.profile_stefano, container, false);
-        } else if ("Ali_Chiavi81".equals(username)) {
+        } else if ("ali_chiavi81".equals(username)) {
             view = inflater.inflate(R.layout.profile_alice, container, false);
         }
 

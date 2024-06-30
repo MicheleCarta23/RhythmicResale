@@ -17,7 +17,8 @@ import androidx.fragment.app.Fragment;
 public class HeaderFragment extends Fragment {
 
     private TextView titleTextView;
-    private ImageButton profileButton, optionButton, logoButton;
+    private ImageButton profileButton;
+    private ImageButton optionButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class HeaderFragment extends Fragment {
         titleTextView = view.findViewById(R.id.header_title);
         profileButton = view.findViewById(R.id.profile);
         optionButton = view.findViewById(R.id.option);
-        logoButton = view.findViewById(R.id.logo);
+        ImageButton logoButton = view.findViewById(R.id.logo);
 
         optionButton.setOnClickListener(this::showPopupMenu);
 
