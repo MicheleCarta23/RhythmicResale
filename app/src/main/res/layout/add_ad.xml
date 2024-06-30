@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,21 +8,17 @@
     android:orientation="vertical"
     android:background="@color/dark_grey">
 
-
     <ScrollView
         android:id="@+id/sell_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal">
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,7 +32,6 @@
                 android:orientation="vertical"
                 android:background="@drawable/rounded_corners_light_background">
 
-
                 <ImageView
                     android:id="@+id/camera"
                     android:layout_width="160dp"
@@ -48,9 +42,7 @@
                     android:background="@drawable/circle"
                     android:padding="60dp"
                     android:src="@drawable/camera_icon"
-                    app:tint="@color/orange"
-                    />
-
+                    app:tint="@color/orange" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -60,7 +52,6 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
 
                 <EditText
                     android:id="@+id/ad_title"
@@ -74,8 +65,7 @@
                     android:padding="10dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/darkgrey"
-                    android:layout_marginBottom="20dp"/>
-
+                    android:layout_marginBottom="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,15 +90,8 @@
                         android:layout_gravity="center"
                         android:padding="10dp"
                         android:spinnerMode="dropdown"
-                        android:backgroundTint="@color/black"
-                        android:popupBackground="@color/lightgrey"
-                        />
-
-
+                        style="@style/CustomSpinnerStyle" />
                 </RelativeLayout>
-
-
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -118,7 +101,6 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
 
                 <EditText
                     android:id="@+id/ad_brand"
@@ -132,9 +114,7 @@
                     android:padding="10dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/darkgrey"
-                    android:layout_marginBottom="20dp"/>
-
-
+                    android:layout_marginBottom="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,7 +124,6 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
 
                 <EditText
                     android:id="@+id/description"
@@ -161,13 +140,7 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/darkgrey"
                     android:layout_marginBottom="20dp"
-                    android:scrollbars="vertical"
-
-                    />
-
-
-
-
+                    android:scrollbars="vertical" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -192,15 +165,8 @@
                         android:layout_gravity="center"
                         android:padding="10dp"
                         android:spinnerMode="dropdown"
-                        android:backgroundTint="@color/black"
-                        android:popupBackground="@color/lightgrey"
-                        />
-
-
+                        style="@style/CustomSpinnerStyle" />
                 </RelativeLayout>
-
-
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -210,7 +176,6 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -230,11 +195,7 @@
                         android:padding="10dp"
                         android:layout_centerVertical="true"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/darkgrey"
-
-                        />
-
-
+                        android:textColorHint="@color/darkgrey" />
 
                     <ImageView
                         android:id="@+id/euro"
@@ -243,10 +204,7 @@
                         android:src="@drawable/euro_icon"
                         android:layout_toEndOf="@+id/ad_price"
                         android:layout_marginStart="6dp"
-                        android:layout_centerVertical="true"
-                        />
-
-
+                        android:layout_centerVertical="true" />
 
                     <ImageButton
                         android:id="@+id/confirm_button"
@@ -258,10 +216,7 @@
                         android:background="@drawable/less_rounded_corners_green"
                         android:src="@drawable/check_icon"
                         android:scaleType="fitEnd"
-                        android:padding="10dp"
-                        />
-
-
+                        android:padding="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -273,21 +228,9 @@
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry"
                         android:textColor="@color/dark_green"
-                        android:textStyle="bold"/>
-
-
+                        android:textStyle="bold" />
                 </RelativeLayout>
-
             </LinearLayout>
-
-
-
-
         </LinearLayout>
-
-
-
     </ScrollView>
-
-
 </RelativeLayout>

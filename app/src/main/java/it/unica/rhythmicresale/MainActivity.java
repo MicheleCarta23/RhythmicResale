@@ -3,8 +3,8 @@ package it.unica.rhythmicresale;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -48,22 +48,50 @@ public class MainActivity extends AppCompatActivity {
         messageButton = findViewById(R.id.message_button);
         sellButton = findViewById(R.id.sell_button);
         favoritesButton = findViewById(R.id.favorite_button);
-        profileButton = findViewById(R.id.profile);
+        profileButton = findViewById(R.id.profile_button);
 
         if (homeButton != null) {
             homeButton.setOnClickListener(v -> navigateToFragment(new InsertionsFragment(), "Insertions", false));
         }
         if (messageButton != null) {
-            messageButton.setOnClickListener(v -> checkLoginAndNavigate(new MessagesFragment(), "Messaggi"));
+            messageButton.setOnClickListener(v -> {
+                if (isUserLoggedIn()) {
+                    navigateToFragment(new MessagesFragment(), "Messaggi", false);
+                } else {
+                    Toast.makeText(MainActivity.this, "Devi effettuare il login per accedere ai messaggi", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }
+            });
         }
         if (sellButton != null) {
-            sellButton.setOnClickListener(v -> checkLoginAndNavigate(new AddAdFragment(), "Aggiungi Annuncio"));
+            sellButton.setOnClickListener(v -> {
+                if (isUserLoggedIn()) {
+                    navigateToFragment(new AddAdFragment(), "Aggiungi Annuncio", false);
+                } else {
+                    Toast.makeText(MainActivity.this, "Devi effettuare il login per vendere", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }
+            });
         }
         if (favoritesButton != null) {
-            favoritesButton.setOnClickListener(v -> checkLoginAndNavigate(new FavoritesFragment(), "Preferiti"));
+            favoritesButton.setOnClickListener(v -> {
+                if (isUserLoggedIn()) {
+                    navigateToFragment(new FavoritesFragment(), "Preferiti", false);
+                } else {
+                    Toast.makeText(MainActivity.this, "Devi effettuare il login per accedere ai preferiti", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }
+            });
         }
         if (profileButton != null) {
-            profileButton.setOnClickListener(v -> checkLoginAndNavigate(new ProfileFragment(), "Profilo"));
+            profileButton.setOnClickListener(v -> {
+                if (isUserLoggedIn()) {
+                    navigateToFragment(new ProfileFragment(), "Profilo", false);
+                } else {
+                    Toast.makeText(MainActivity.this, "Devi effettuare il login per accedere al profilo", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }
+            });
         }
     }
 
@@ -129,13 +157,16 @@ public class MainActivity extends AppCompatActivity {
                 headerFragment.setTitle("Messaggi");
             } else if (fragment instanceof AddAdFragment) {
                 headerFragment.showOptionIcon(false);
-                headerFragment.setTitle("Aggiungi Annuncio");
+                headerFragment.setTitle("Vendi");
             } else if (fragment instanceof FavoritesFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Preferiti");
             } else if (fragment instanceof InsertionsFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Home");
+            } else if (fragment instanceof ConversationFragment) {
+                headerFragment.showOptionIcon(false);
+                headerFragment.setTitle("Messaggi");
             } else {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("");
@@ -148,5 +179,9 @@ public class MainActivity extends AppCompatActivity {
         if (currentFragment != null) {
             updateHeader(currentFragment);
         }
+    }
+
+    public void navigateToProfileStefano() {
+        navigateToFragment(ProfileFragment.newInstance("ste_meraviglia50"), "Profilo", true);
     }
 }
