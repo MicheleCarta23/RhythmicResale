@@ -10,6 +10,7 @@
         <item name="android:background">@drawable/less_rounded_corners</item>
         <item name="android:padding">10dp</item>
         <item name="android:textColor">@color/black</item>
+
     </style>
 
 </resources>
