@@ -4,15 +4,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class ConversationFragment extends Fragment {
 
@@ -39,6 +42,9 @@ public class ConversationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_conversation, container, false);
         LinearLayout conversationLayout = view.findViewById(R.id.conversation_layout);
+        EditText inputMessage = view.findViewById(R.id.input_message);
+        Button sendButton = view.findViewById(R.id.send_button);
+        ScrollView scrollView = view.findViewById(R.id.scroll_view);
 
         Map<String, String[]> conversations = getConversations();
 
@@ -49,6 +55,16 @@ public class ConversationFragment extends Fragment {
                 addMessage(conversationLayout, message);
             }
         }
+
+        sendButton.setOnClickListener(v -> {
+            String messageText = inputMessage.getText().toString().trim();
+            if (!messageText.isEmpty()) {
+                inputMessage.setText("");
+                scrollView.post(() -> scrollView.fullScroll(View.FOCUS_DOWN));
+            } else {
+                Toast.makeText(getContext(), "Non puoi inviare un messaggio vuoto", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return view;
     }
@@ -143,7 +159,4 @@ public class ConversationFragment extends Fragment {
 
         layout.addView(messageLayout);
     }
-
-
-
 }

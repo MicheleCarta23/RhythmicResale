@@ -78,6 +78,8 @@
     <string name="logout">"Logout"</string>
     <string name="conversation_id_text">Conversazione ID: %1$s</string>
     <string name="conversation_id_placeholder">Conversazione ID: %1$s</string>
+    <string name="input_message">Scrivi un messaggio</string>
+    <string name="send">Invia</string>
 
 
 
