@@ -104,6 +104,9 @@
     <string name="distance">Distanza</string>
     <string name="category">Categoria</string>
     <string name="advanced_search">Ricerca Avanzata</string>
+    <string name="text_ste1">Ciao, sono interessato all\'annuncio del basso, è ancora disponibile?</string>
+    <string name="text_alice1">Salve sì, ho già ricevuto alcune proposte ma per ora è disponibile</string>
+
 
 
     <string-array name="categories">
