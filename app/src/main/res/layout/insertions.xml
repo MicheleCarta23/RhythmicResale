@@ -122,8 +122,9 @@
 
                     <ImageView
                         android:id="@+id/eye1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad1_name"
@@ -135,7 +136,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num36"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad1_name"
                         android:layout_toEndOf="@id/eye1"
@@ -197,8 +199,9 @@
 
                     <ImageView
                         android:id="@+id/eye2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad2_name"
@@ -210,7 +213,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num272"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad2_name"
                         android:layout_toEndOf="@id/eye2"
@@ -272,8 +276,9 @@
 
                     <ImageView
                         android:id="@+id/eye3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad3_name"
@@ -285,7 +290,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num108"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad3_name"
                         android:layout_toEndOf="@id/eye3"
@@ -350,8 +356,9 @@
 
                     <ImageView
                         android:id="@+id/eye4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad4_name"
@@ -363,7 +370,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num49"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad4_name"
                         android:layout_toEndOf="@id/eye4"
@@ -418,8 +426,9 @@
 
                     <ImageView
                         android:id="@+id/eye5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad5_name" />
@@ -429,7 +438,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num27"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad5_name"
                         android:layout_toEndOf="@id/eye5" />
@@ -481,8 +491,9 @@
 
                     <ImageView
                         android:id="@+id/eye6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad6_name" />
@@ -492,7 +503,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/num66"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad6_name"
                         android:layout_toEndOf="@id/eye6" />
@@ -545,8 +557,9 @@
 
                     <ImageView
                         android:id="@+id/eye7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad7_name" />
@@ -556,7 +569,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/nu86"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="12dp"
                         android:layout_below="@+id/ad7_name"
                         android:layout_toEndOf="@id/eye7" />
@@ -608,8 +622,9 @@
 
                     <ImageView
                         android:id="@+id/eye8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="3dp"
                         android:src="@drawable/eye_icon"
                         android:layout_gravity="start"
                         android:layout_below="@+id/ad8_name" />
@@ -630,17 +645,15 @@
                         android:text="@string/price_tamburo"
                         android:textColor="@color/orange"
                         android:textStyle="bold"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="6dp"
                         android:layout_below="@+id/ad8_name"
                         android:layout_alignEnd="@id/ad8_name" />
 
                 </RelativeLayout>
 
-
-
-
-
+                
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
