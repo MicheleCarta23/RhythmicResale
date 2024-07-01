@@ -37,6 +37,11 @@ public class BassInsertionFragment extends Fragment {
             navigateToMessagesAlice();
         });
 
+        // Imposta tutte le icone del footer su grigio
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).setAllFooterIconsToGrey();
+        }
+
         return view;
     }
 

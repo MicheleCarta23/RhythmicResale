@@ -26,6 +26,11 @@ public class ProfileAliceFragment extends Fragment {
             navigateToBassInsertion();
         });
 
+        // Imposta tutte le icone del footer su grigio
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).setAllFooterIconsToGrey();
+        }
+
         return view;
     }
 
