@@ -117,16 +117,17 @@
                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/bass56image"
+                        android:id="@+id/bass6_image"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="26dp"
                         android:src="@drawable/basso6"
                         app:shapeAppearanceOverlay="@style/rounded_image"
                         android:layout_marginStart="70dp"
                         android:layout_alignStart="@+id/bass5_image"
                         android:tint="@color/dark_transparent"
                         />
+
+
 
                 </RelativeLayout>
 

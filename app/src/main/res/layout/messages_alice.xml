@@ -141,18 +141,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
+        android:background="@color/cream"
         android:padding="8dp">
 
         <EditText
             android:id="@+id/input_message"
-            android:layout_width="300dp"
+            android:layout_width="288dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:hint="@string/input_message"
             android:padding="8dp"
             android:background="@drawable/rounded_corners"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
             android:maxHeight="120dp"
@@ -166,7 +166,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/send_icon"
-            android:background="@drawable/less_rounded_corners"
+            android:background="@drawable/rounded_corners"
             android:layout_marginEnd="12dp"
             />
     </RelativeLayout>
