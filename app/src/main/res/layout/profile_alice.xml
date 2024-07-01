@@ -118,7 +118,7 @@
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/basso_alice"
+                        android:src="@drawable/basso1"
                         app:shapeAppearanceOverlay="@style/rounded_image"
                         android:id="@+id/ad1_image"
                         />
@@ -127,7 +127,7 @@
                         android:id="@+id/ad1_name"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/ad_basso_alice"
+                        android:text="@string/ad_basso"
                         android:textColor="@color/darkdarkgrey"
                         android:textSize="16sp"
                         android:padding="4dp"
@@ -149,7 +149,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/num17"
+                        android:text="@string/num108"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:layout_marginEnd="12dp"
@@ -160,7 +160,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/price_basso_alice"
+                        android:text="@string/price_basso"
                         android:textColor="@color/orange"
                         android:textStyle="bold"
                         android:textSize="16sp"

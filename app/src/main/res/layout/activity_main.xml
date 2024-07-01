@@ -23,31 +23,32 @@
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="62dp"
+        android:layout_height="56dp"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_top_corners">
+        android:background="@color/lightgrey">
 
         <ImageButton
             android:id="@+id/home_button"
             android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:src="@drawable/home_icon"
             android:scaleType="fitCenter"
             android:backgroundTint="@color/lightgrey"
             android:contentDescription="@string/home"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            />
 
         <View
             android:layout_width="2dp"
-            android:layout_height="50dp"
+            android:layout_height="42dp"
             android:background="@color/darkgrey"
             android:layout_gravity="center_vertical" />
 
         <ImageButton
             android:id="@+id/message_button"
             android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:src="@drawable/message_icon"
             android:scaleType="fitCenter"
             android:backgroundTint="@color/lightgrey"
@@ -58,14 +59,14 @@
 
         <View
             android:layout_width="2dp"
-            android:layout_height="50dp"
+            android:layout_height="42dp"
             android:background="@color/darkgrey"
             android:layout_gravity="center_vertical" />
 
         <ImageButton
             android:id="@+id/sell_button"
             android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:src="@drawable/plus_icon"
             android:scaleType="fitCenter"
             android:backgroundTint="@color/lightgrey"
@@ -76,14 +77,14 @@
 
         <View
             android:layout_width="2dp"
-            android:layout_height="50dp"
+            android:layout_height="42dp"
             android:background="@color/darkgrey"
             android:layout_gravity="center_vertical" />
 
         <ImageButton
             android:id="@+id/favorite_button"
             android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:src="@drawable/heart_icon"
             android:scaleType="fitCenter"
             android:backgroundTint="@color/lightgrey"
