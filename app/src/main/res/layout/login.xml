@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/dark_grey">
+    android:background="@color/light_grey">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,8 +43,8 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/circle"
                 android:src="@drawable/cromalogo"
                 android:scaleType="centerInside" />
@@ -66,7 +66,7 @@
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/less_rounded_corners_light_background">
 
                 <TextView
@@ -88,7 +88,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="18dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
                     android:autofillHints="name"
@@ -118,32 +118,67 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/darkgrey" />
 
-                <Button
-                    android:id="@+id/login_button"
-                    android:layout_width="match_parent"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/less_rounded_corners_orange"
                     android:layout_below="@+id/password"
-                    android:layout_centerHorizontal="true"
-                    android:text="Accedi"
-                    android:layout_marginTop="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
-                    android:background="@drawable/less_rounded_corners"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/login"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/orange"
+                        android:textColor="@color/cream"/>
+
+                </RelativeLayout>
+
+
+
+
             </RelativeLayout>
 
-            <Button
-                android:id="@+id/show_register_button"
-                android:layout_width="320dp"
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Registrati"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/less_rounded_corners"
+                android:text="@string/or"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/darkdarkgrey"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/less_rounded_corners_orange"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp">
+
+                <Button
+                    android:id="@+id/show_register_button"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/cream"
+                    />
+
+            </RelativeLayout>
+
+
 
             <RelativeLayout
                 android:id="@+id/register_layout"
