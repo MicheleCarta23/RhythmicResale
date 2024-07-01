@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:max="300"
         android:progress="0"
-        android:thumb="@drawable/custom_seekbar_thumb"/>
+        android:thumb="@drawable/custom_seekbar_thumb" />
 
     <TextView
         android:id="@+id/text_distance"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/less_rounded_corners"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="10dp">
 
         <Spinner
             android:id="@+id/spinner_category"
@@ -70,6 +70,32 @@
         android:layout_height="wrap_content"
         android:text="@string/ad_type"
         android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/less_rounded_corners"
+        android:layout_marginBottom="8dp">
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            style="@style/CustomSpinnerStyle" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="16sp"
         android:paddingTop="16dp"
         android:paddingBottom="8dp"/>
 
@@ -78,10 +104,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/less_rounded_corners"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="10dp">
 
         <Spinner
-            android:id="@+id/spinner_type"
+            android:id="@+id/spinner_price"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="center"

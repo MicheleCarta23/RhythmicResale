@@ -157,6 +157,11 @@ public class MainActivity extends AppCompatActivity {
         if (profileButton != null) profileButton.setColorFilter(greyColor);
     }
 
+    public void setSellButton(){
+        int orangeColor = ContextCompat.getColor(this, R.color.orange);
+        if (sellButton != null) sellButton.setColorFilter(orangeColor);
+    }
+
     private void updateHeader(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         HeaderFragment headerFragment = (HeaderFragment) fragmentManager.findFragmentById(R.id.header_container);
@@ -164,28 +169,39 @@ public class MainActivity extends AppCompatActivity {
             if (fragment instanceof ProfileFragment) {
                 headerFragment.showOptionIcon(true);
                 headerFragment.setTitle("Profilo");
+                headerFragment.showArrow(false);
             } else if (fragment instanceof MessagesFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Messaggi");
+                headerFragment.showArrow(false);
             } else if (fragment instanceof AddAdFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Vendi");
+                headerFragment.showArrow(false);
             } else if (fragment instanceof FavoritesFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Preferiti");
+                headerFragment.showArrow(false);
             } else if (fragment instanceof InsertionsFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Home");
+                headerFragment.showArrow(false);
             } else if (fragment instanceof ConversationFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Messaggi");
-
+                headerFragment.showArrow(false);
+            } else if (fragment instanceof BassInsertionFragment || fragment instanceof ProfileAliceFragment || fragment instanceof MessagesAliceFragment) {
+                headerFragment.showOptionIcon(false);
+                headerFragment.showArrow(true);
+                headerFragment.setTitle("");
             } else {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("");
+                headerFragment.showArrow(false);
             }
         }
     }
+
 
     private void updateHeaderTitleOnBackStackChanged() {
         Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);

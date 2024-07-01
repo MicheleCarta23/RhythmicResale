@@ -48,6 +48,7 @@ public class InsertionsFragment extends Fragment {
         TextView textDistance = dialog.findViewById(R.id.text_distance);
         Spinner spinnerCategory = dialog.findViewById(R.id.spinner_category);
         Spinner spinnerType = dialog.findViewById(R.id.spinner_type);
+        Spinner spinnerPrice = dialog.findViewById(R.id.spinner_price);
         Button buttonApply = dialog.findViewById(R.id.button_apply);
 
         seekBarDistance.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -55,7 +56,7 @@ public class InsertionsFragment extends Fragment {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (progress < 1) {
                     textDistance.setText(R.string.distance_less_than_1);
-                } else if (progress > 300) {
+                } else if (progress >= 300) {
                     textDistance.setText(R.string.distance_greater_than_300);
                 } else {
                     textDistance.setText(getString(R.string.distance_km, progress));
@@ -84,6 +85,14 @@ public class InsertionsFragment extends Fragment {
         );
         adapterType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerType.setAdapter(adapterType);
+
+        ArrayAdapter<CharSequence> adapterPrice = ArrayAdapter.createFromResource(
+                requireContext(),
+                R.array.ad_prices,
+                android.R.layout.simple_spinner_item
+        );
+        adapterPrice.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerPrice.setAdapter(adapterPrice);
 
         buttonApply.setOnClickListener(v -> dialog.dismiss());
 

@@ -64,6 +64,10 @@ public class ProfileFragment extends Fragment {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment_container, addAdFragment);
         transaction.addToBackStack("Aggiungi Annuncio");
+        if (getActivity() instanceof MainActivity) {
+            ((MainActivity) getActivity()).setSellButton();
+        }
         transaction.commit();
+
     }
 }

@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ public class HeaderFragment extends Fragment {
     private TextView titleTextView;
     private ImageButton profileButton;
     private ImageButton optionButton;
+    private ImageView arrowTitle;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -34,7 +36,8 @@ public class HeaderFragment extends Fragment {
         titleTextView = view.findViewById(R.id.header_title);
         profileButton = view.findViewById(R.id.profile_button);
         optionButton = view.findViewById(R.id.option_button);
-        ImageButton logoButton = view.findViewById(R.id.logo); // Assicurati che il logo abbia l'ID logo nel layout
+        arrowTitle = view.findViewById(R.id.arrow_title);  // Assicurati di inizializzare arrowTitle
+        ImageButton logoButton = view.findViewById(R.id.logo);
 
         optionButton.setOnClickListener(this::showPopupMenu);
 
@@ -103,6 +106,12 @@ public class HeaderFragment extends Fragment {
     public void setTitle(String title) {
         if (titleTextView != null) {
             titleTextView.setText(title);
+        }
+    }
+
+    public void showArrow(boolean showArrow) {
+        if (arrowTitle != null) {
+            arrowTitle.setVisibility(showArrow ? View.VISIBLE : View.GONE);
         }
     }
 
