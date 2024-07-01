@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateFooterIcons(String currentFragmentTitle) {
-        int defaultColor = ContextCompat.getColor(this, R.color.white);
+        int defaultColor = ContextCompat.getColor(this, R.color.darkgrey);
         int selectedColor = ContextCompat.getColor(this, R.color.orange);
 
         if (homeButton != null) homeButton.setColorFilter(currentFragmentTitle.equals("Insertions") ? selectedColor : defaultColor);

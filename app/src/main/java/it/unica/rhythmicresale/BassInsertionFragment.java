@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.widget.LinearLayout;
 
 public class BassInsertionFragment extends Fragment {
 
@@ -28,6 +28,15 @@ public class BassInsertionFragment extends Fragment {
             navigateToProfileAlice();
         });
 
+        // Trova il pulsante send_message
+        ImageButton sendMessageButton = view.findViewById(R.id.send_message);
+
+        // Imposta un listener di clic
+        sendMessageButton.setOnClickListener(v -> {
+            // Naviga al layout "messages_alice"
+            navigateToMessagesAlice();
+        });
+
         return view;
     }
 
@@ -36,6 +45,15 @@ public class BassInsertionFragment extends Fragment {
         FragmentManager fragmentManager = getParentFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment_container, profileAliceFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    private void navigateToMessagesAlice() {
+        Fragment messagesAliceFragment = new MessagesAliceFragment();
+        FragmentManager fragmentManager = getParentFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.fragment_container, messagesAliceFragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

@@ -150,7 +150,47 @@
             </RelativeLayout>
 
             <!-- Messaggio 4 (statico)-->
+            <RelativeLayout
+                android:id="@+id/message4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/rounded_corners"
+                android:tag="3"
+                android:layout_below="@+id/message3"
+                >
 
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image4"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/propic_alice"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/circle_image"
+                    />
+
+                <TextView
+                    android:id="@+id/nickname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user4"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/profile_image4"
+                    android:layout_alignTop="@id/profile_image4" />
+
+                <TextView
+                    android:id="@+id/message_preview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_user4"
+                    android:layout_toEndOf="@id/profile_image4"
+                    android:layout_below="@id/nickname4" />
+
+            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
 

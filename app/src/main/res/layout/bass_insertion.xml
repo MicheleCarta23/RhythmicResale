@@ -248,6 +248,7 @@
 
 
                 <ImageButton
+                    android:id="@+id/send_message"
                     android:layout_width="68dp"
                     android:layout_height="53dp"
                     android:src="@drawable/message_icon_active"

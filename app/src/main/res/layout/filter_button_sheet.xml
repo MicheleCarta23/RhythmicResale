@@ -96,7 +96,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/apply"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/less_rounded_corners"
-        android:textColor="@android:color/white"/>
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/cream"/>
 </LinearLayout>
