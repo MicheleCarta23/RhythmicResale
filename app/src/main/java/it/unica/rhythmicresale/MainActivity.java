@@ -147,6 +147,16 @@ public class MainActivity extends AppCompatActivity {
         if (profileButton != null) profileButton.setColorFilter(currentFragmentTitle.equals("Profilo") ? selectedColor : defaultColor);
     }
 
+    public void setAllFooterIconsToGrey() {
+        int greyColor = ContextCompat.getColor(this, R.color.darkgrey);
+
+        if (homeButton != null) homeButton.setColorFilter(greyColor);
+        if (messageButton != null) messageButton.setColorFilter(greyColor);
+        if (sellButton != null) sellButton.setColorFilter(greyColor);
+        if (favoritesButton != null) favoritesButton.setColorFilter(greyColor);
+        if (profileButton != null) profileButton.setColorFilter(greyColor);
+    }
+
     private void updateHeader(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         HeaderFragment headerFragment = (HeaderFragment) fragmentManager.findFragmentById(R.id.header_container);
@@ -169,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (fragment instanceof ConversationFragment) {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("Messaggi");
+
             } else {
                 headerFragment.showOptionIcon(false);
                 headerFragment.setTitle("");
