@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.fragment.app.Fragment;
 
 import java.util.HashMap;
@@ -43,7 +45,7 @@ public class ConversationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_conversation, container, false);
         LinearLayout conversationLayout = view.findViewById(R.id.conversation_layout);
         EditText inputMessage = view.findViewById(R.id.input_message);
-        Button sendButton = view.findViewById(R.id.send_button);
+        AppCompatImageButton sendButton = view.findViewById(R.id.send_button);  // Cambia da Button a AppCompatImageButton se necessario
         ScrollView scrollView = view.findViewById(R.id.scroll_view);
 
         Map<String, String[]> conversations = getConversations();

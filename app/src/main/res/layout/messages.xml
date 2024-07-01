@@ -148,6 +148,9 @@
                     android:layout_below="@id/nickname3" />
 
             </RelativeLayout>
+
+            <!-- Messaggio 4 (statico)-->
+
         </RelativeLayout>
     </ScrollView>
 
