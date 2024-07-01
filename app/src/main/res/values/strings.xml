@@ -87,13 +87,21 @@
     <string name="privacy">Privacy</string>
     <string name="bass_description">Basso Fender Squier serie Precision BASS, prodotto nel 2018 replica dell\'iconico basso del \'70. Design classico e sound avvolgente tipico di questi bassi. Usato solo per verificare che funzioni, dotato ancora di tutte le pellicole protettive. Vendo per inutilizzo. No perditempo, effettuo spedizioni solo in Italia.</string>
     <string name="buy">Acquista</string>
-
-
-
-
-
-
-
+    <string name="distance_less_than_1"> &lt;1 km</string>
+    <string name="distance_greater_than_300"> &gt;300 km</string>
+    <string name="distance_km"> %1$d km</string>
+    <string name="ricerca_avanzata">Ricerca avanzata</string>
+    <string name="distanza_massima">Distanza massima</string>
+    <string name="dove">Dove</string>
+    <string name="categoria">Categoria</string>
+    <string name="tipo_di_annuncio">Tipo di Annuncio</string>
+    <string name="applica">Applica</string>
+    <string name="apply">Applica</string>
+    <string name="ad_type">Condizioni</string>
+    <string name="lt_1_km"><![CDATA[<1 km]]></string>
+    <string name="distance">Distanza</string>
+    <string name="category">Categoria</string>
+    <string name="advanced_search">Ricerca Avanzata</string>
 
 
     <string-array name="categories">
