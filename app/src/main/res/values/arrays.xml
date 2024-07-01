@@ -1,0 +1,23 @@
+<resources>
+
+    <string-array name="ad_categories">
+        <item>A corda</item>
+        <item>Elettronici</item>
+        <item>Fiati</item>
+        <item>Percussioni</item>
+        <item>Tastiere</item>
+        <item>Accessori</item>
+        <item>Altro</item>
+    </string-array>
+
+    <string-array name="ad_types">
+
+        <item>Nuovo</item>
+        <item>Pari al nuovo</item>
+        <item>Ottime</item>
+        <item>Qualche segno di usura</item>
+        <item>Rovinato ma funzionante</item>
+        <item>Non funzionante</item>
+
+    </string-array>
+</resources>
