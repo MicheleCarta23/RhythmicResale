@@ -1,15 +1,253 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:orientation="vertical"
-    >
+    android:background="@color/cream">
+
+
+    <LinearLayout
+        android:id="@+id/alice_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_bottom_corners_light_background"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/button_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/propic_alice"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle_image"/>
+
+
+        <TextView
+            android:id="@+id/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_alice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkdarkgrey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/alice_banner"
+        android:layout_marginTop="12dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bass1_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/basso1"
+            app:shapeAppearanceOverlay="@style/rounded_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="14dp"
+            />
+
+        <TextView
+            android:id="@+id/insertion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_basso"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/price_basso"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/orange"
+            android:layout_marginEnd="14dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/ad_banner"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/text1"
+        android:layout_width="236dp"
         android:layout_height="wrap_content"
-        android:text="Messages Alice"
-        android:textSize="18sp"
-        android:layout_centerInParent="true"/>
+        android:layout_below="@+id/horizontal_line"
+        android:text="@string/text_ste1"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/texts_from_ste"
+        android:padding="12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"/>
+  
+        <LinearLayout
+        android:id="@+id/alice_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_bottom_corners_light_background"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/button_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/propic_alice"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle_image"/>
+
+
+        <TextView
+            android:id="@+id/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_alice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkdarkgrey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/alice_banner"
+        android:layout_marginTop="12dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bass1_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/basso1"
+            app:shapeAppearanceOverlay="@style/rounded_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="14dp"
+            />
+
+        <TextView
+            android:id="@+id/insertion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_basso"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/price_basso"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/orange"
+            android:layout_marginEnd="14dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/ad_banner"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_line"
+        android:text="@string/text_ste1"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/texts_from_ste"
+        android:padding="12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"/>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:text="@string/text_alice1"
+        android:textSize="16sp"
+        android:background="@drawable/texts_from_alice"
+        android:padding="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        />      
+              
 
     <RelativeLayout
         android:id="@+id/input_layout"
